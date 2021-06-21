@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Closure Ex</title>
+</head>
+<body>
+    
+    <input type="color">
+
+    <script>
+        const colorInput = document.querySelector('input');
+
+        let clicks = 0;
+
+        colorInput.addEventListener('change', () => {
+            const currentClick = ++clicks,
+                  currentColor = colorInput.value;
+            let prevColor;
+            setTimeout(() => {
+                alert(`Total Clicks: ${clicks}
+Current Click#: ${currentClick},
+Current Color: ${currentColor},
+Prev Color: ${prevColor}`);
+            }, 8000);
+            prevColor = currentColor;
+        });
+    
+    </script>
+
+</body>
+</html>
