@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML 5 demo</title>
+    <style>
+      /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol,
+      ul {
+        list-style: none;
+      }
+      blockquote,
+      q {
+        quotes: none;
+      }
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Header</h1>
+    </header>
+    <input type="text" placeholder="Enter your name" />
+    <button id="saveBtn" onclick="saveDetails()" onmouseover="showLog()">
+        Click Me to save your details...
+    </button>
+    
+    <main>
+        <article>
+            <h1>Post 1</h1>
+            <section>Section 1 - Prologue</section>
+            <section>Section 2 - The story</section>
+            <section>Section 3 - Epilogue</section>
+        </article>
+        <article>
+            <section>מנת פתיחה</section>
+            <section>מנה עיקרית</section>
+            <section>מנה עיקרית 2</section>
+            <section>קינוח</section>
+        </article>
+        <figure>
+            <img src="images/dog.jpg" alt="My dog" title="My dog">
+            <figcaption>
+                Image title/description
+            </figcaption>
+        </figure>
+    </main>
+    <aside></aside>
+
+    <nav>The menu, the navigation options...</nav>
+
+    <select>
+      <option value="">Select</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+      <option value="4">Option 4</option>
+    </select>
+    <a href="http://www.sport5.co.il">Go to Sport5</a>
+    <p>Lala Babala</p>
+    <ol>
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+    </ol>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      <a href="#">Assumenda</a> inventore, repellat possimus laborum earum
+      doloribus sed accusantium in? Quo dolor, cumque cum facilis neque nostrum
+      odit iure earum omnis deserunt.
+    </p>
+    <footer>
+      <input type="date" /> | <input type="color" /> |
+      <input type="range" min="18" max="100" />
+      <input type="number">
+    </footer>
+
+    <script>
+        function saveDetails() {
+            alert('Ahalan!');
+        }
+
+        function showLog() {
+            console.log('Hovering...');
+        }
+    </script>
+  </body>
+</html>
